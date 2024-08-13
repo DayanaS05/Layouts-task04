@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container{
+    background: linear-gradient(45deg, rgb(231, 153, 117), rgb(188, 126, 238));
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container .heading{
+    text-align:center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(6, 146, 18, 0.2);
+    font-size: 50px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(130, 212, 146, 0.2);
+    border-radius: 5px;
+    background: rgb(217, 245, 248);
+    text-align: center;
+    padding: 30px 20px;
+}
+.container .box-container .box img{
+    height: 80px;
+}
+.container .box-container .box h3{
+    color: #180356;
+    font-size: 22px;
+    padding: 10px
+}
+.container .box-container .box p{
+    color: #292323;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+@media (max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #f6ebeb;
+}
+
+.education {
+    padding: 0;
+}
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.education-item h2 {
+    margin: 0;
+    color: #555;
+}
+.institution {
+    font-weight: bold;
+    color: #777;
+}
+
+.date {
+    font-style: italic;
+    color: #999;
+}
+
+.description {
+    margin-top: 10px;
+    color:  #444;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    /* Stack Boxes Vertically on Small Screens */
+    .container .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .container .heading {
+        font-size: 35px;
+    }
+
+    .container .box-container .box {
+        padding: 20px;
+    }
+
+    .container .box-container .box img {
+        height: 60px;
+    }
+
+    .container .box-container .box h3 {
+        font-size: 18px;
+    }
+
+    .container .box-container .box p {
+        font-size: 14px;
+    }
+
+    .container .box-container .box .btn {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+}
+
+/* Responsive Styles for Project Section */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .education-item {
+        padding: 10px;
+    }
+
+    .education-item h2 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
